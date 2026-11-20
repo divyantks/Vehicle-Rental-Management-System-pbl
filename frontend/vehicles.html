@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Vehicles</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="message"></div>
+    <div class="container">
+      <h1>Vehicles</h1>
+      <div class="card filters">
+        <div>
+          <label for="keyword">Search</label
+          ><input id="keyword" placeholder="Brand or model" />
+        </div>
+        <div>
+          <label for="typeFilter">Type</label
+          ><select id="typeFilter">
+            <option value="">All types</option>
+            <option>Car</option>
+            <option>SUV</option>
+            <option>Bike</option>
+            <option>Scooter</option>
+            <option>Van</option>
+          </select>
+        </div>
+        <label class="check"
+          ><input type="checkbox" id="onlyAvailable" /> Available only</label
+        >
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+    <script src="/js/api.js"></script>
+    <script src="/js/vehicles.js"></script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="message"></div>
+    <div class="container">
+      <h1 id="welcome">Welcome</h1>
+      <p class="muted">Your rental summary</p>
+      <div class="stats">
+        <div class="card stat"><b id="sAvailable">-</b>Vehicles available</div>
+        <div class="card stat"><b id="sActive">-</b>Active bookings</div>
+        <div class="card stat"><b id="sRentals">-</b>Completed rentals</div>
+      </div>
+      <div class="actions">
+        <a class="btn" href="/vehicles.html">Browse vehicles</a
+        ><a class="btn outline" href="/bookings.html">My bookings</a>
+      </div>
+    </div>
+    <script src="/js/api.js"></script>
+    <script src="/js/dashboard.js"></script>
+  </body>
+</html>

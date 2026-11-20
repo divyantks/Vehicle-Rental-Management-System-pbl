@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Book a Vehicle</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="message"></div>
+    <div class="container auth card">
+      <h1>Book a Vehicle</h1>
+      <div id="vehicleInfo" class="muted">Loading...</div>
+      <hr />
+      <form id="bookForm">
+        <div class="field">
+          <label for="startDate">Start date</label
+          ><input id="startDate" type="date" required />
+        </div>
+        <div class="field">
+          <label for="days">Number of days (1-30)</label
+          ><input id="days" type="number" min="1" max="30" value="1" required />
+        </div>
+        <p>Estimated cost: <b id="cost">-</b></p>
+        <button class="btn" id="bookBtn" type="submit">Confirm Booking</button>
+      </form>
+    </div>
+    <script src="/js/api.js"></script>
+    <script src="/js/book.js"></script>
+  </body>
+</html>

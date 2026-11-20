@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <nav>
+      <a class="brand" href="/">&#128663; VehicleRental</a>
+      <div class="links">
+        <a class="link" href="/register.html">Register</a>
+      </div>
+    </nav>
+    <div id="message"></div>
+    <div class="container auth card">
+      <h1>Login</h1>
+      <p class="muted">Admins and customers log in here.</p>
+      <form id="loginForm">
+        <div class="field">
+          <label for="email">Email</label
+          ><input id="email" type="email" required />
+        </div>
+        <div class="field">
+          <label for="password">Password</label
+          ><input id="password" type="password" required />
+        </div>
+        <button class="btn" type="submit">Login</button>
+      </form>
+      <p class="muted">
+        New customer? <a href="/register.html">Register here</a>
+      </p>
+    </div>
+    <script src="/js/api.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

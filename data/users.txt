@@ -1,0 +1,4 @@
+U1|ADMIN|System Admin|admin@rental.com|9000000000|240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9|-
+U2|CUSTOMER|Divyant Kumar Srivastava|divyant70@gmail.com|9319692548|8ebdadcc159d8d64bbfc9cee1ca0f980bd9f8092cb73225b33533ba3a49fe663|up14fq1234
+U3|CUSTOMER|Divyant Kumar Srivastava|divyant12@gmail.com|9319692548|c9cd3fd8733628819380ad2565b2a087559f3b2fbe04e6a1f2df811f7840d250|upqr1234
+U4|CUSTOMER|Divyant Kumar Srivastava|divyant123@gmail.com|9319692548|cdbb71d34415e91baddfb7fa38325ed061e92528e1c1b0daa3d511f663acf73e|up14bp1234

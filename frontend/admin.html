@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="message"></div>
+    <div class="container">
+      <h1>Admin Panel</h1>
+      <div class="tabs">
+        <button data-tab="overview">Dashboard</button
+        ><button data-tab="vehicles">Vehicles</button
+        ><button data-tab="customers">Customers</button
+        ><button data-tab="bookings">Bookings</button
+        ><button data-tab="rentals">Rentals</button>
+      </div>
+      <div class="tab" id="tab-overview">
+        <div class="stats" id="stats"></div>
+      </div>
+      <div class="tab" id="tab-vehicles" hidden>
+        <div class="card">
+          <h2 id="formTitle">Add New Vehicle</h2>
+          <form id="vehicleForm">
+            <input type="hidden" id="vId" />
+            <div class="row2">
+              <div class="field">
+                <label for="vBrand">Brand</label
+                ><input id="vBrand" maxlength="30" required />
+              </div>
+              <div class="field">
+                <label for="vModel">Model</label
+                ><input id="vModel" maxlength="30" required />
+              </div>
+            </div>
+            <div class="row2">
+              <div class="field">
+                <label for="vType">Type</label
+                ><select id="vType">
+                  <option>Car</option>
+                  <option>SUV</option>
+                  <option>Bike</option>
+                  <option>Scooter</option>
+                  <option>Van</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="vPrice">Price per day</label
+                ><input id="vPrice" type="number" min="1" step="any" required />
+              </div>
+            </div>
+            <div class="actions">
+              <button class="btn" type="submit">Save</button
+              ><button class="btn outline" type="button" id="resetForm">
+                Clear
+              </button>
+            </div>
+          </form>
+        </div>
+        <div id="vehicleTable" style="margin-top: 16px"></div>
+      </div>
+      <div class="tab" id="tab-customers" hidden>
+        <div id="customerTable"></div>
+      </div>
+      <div class="tab" id="tab-bookings" hidden>
+        <div id="bookingTable"></div>
+      </div>
+      <div class="tab" id="tab-rentals" hidden>
+        <div id="rentalTable"></div>
+      </div>
+    </div>
+    <script src="/js/api.js"></script>
+    <script src="/js/admin.js"></script>
+  </body>
+</html>

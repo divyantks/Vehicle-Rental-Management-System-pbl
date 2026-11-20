@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <nav>
+      <a class="brand" href="/">&#128663; VehicleRental</a>
+      <div class="links"><a class="link" href="/login.html">Login</a></div>
+    </nav>
+    <div id="message"></div>
+    <div class="container auth card">
+      <h1>Customer Registration</h1>
+      <form id="registerForm">
+        <div class="field">
+          <label for="name">Full name</label
+          ><input id="name" maxlength="50" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label
+          ><input id="email" type="email" required />
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="phone">Phone (10 digits)</label
+            ><input id="phone" pattern="\d{10}" required />
+          </div>
+          <div class="field">
+            <label for="license">Licence number</label
+            ><input id="license" maxlength="30" required />
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field">
+            <label for="password">Password (min 6)</label
+            ><input id="password" type="password" minlength="6" required />
+          </div>
+          <div class="field">
+            <label for="confirm">Confirm password</label
+            ><input id="confirm" type="password" required />
+          </div>
+        </div>
+        <button class="btn" type="submit">Register</button>
+      </form>
+      <p class="muted">Already registered? <a href="/login.html">Login</a></p>
+    </div>
+    <script src="/js/api.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

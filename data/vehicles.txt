@@ -1,0 +1,5 @@
+V101|Toyota|Innova|Car|2500.0|true
+V102|Maruti|Swift|Car|1500.0|true
+V103|Hyundai|Creta|SUV|2200.0|true
+V104|Royal Enfield|Classic 350|Bike|900.0|true
+V105|Honda|Activa|Scooter|500.0|true
